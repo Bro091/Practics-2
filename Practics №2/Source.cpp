@@ -19,35 +19,21 @@ int main() {
 	//Задача 3.
 	std::cout << "Задача 3.\nВведите число -> ";
 	std::cin >> n;
-	std::cout << (n % 4 == 0 && n % 3 != 0 ? "FALSE" : "TRUE") << "\n\n";
+	std::cout << (n % 4 == 0 && n % 3 != 0 ? "TRUE" : "FALSE") << "\n\n";
 
 	// Задача 4
 	int a, b;
 	std::cout << "Задача 4. \nВвеедите четыре числа - > ";
 	std::cin >> n >> m >> a >> b;
 
-	if (n < m && m < a && a < b)
-
-		std::cout << m << a << b;
-
-	else
-
-		if (n > m && m < a && a < b)
-			std::cout << a << ' ' << b;
-		else
-			if (n > m && m < a && a > b)
-				std::cout << a;
-			else
-				if (n > m && m > a && a < b)
-					std::cout << b;
-				else
-					if (n < m && m < a && a > b)
-						std::cout << m << ' ' << a;
-					else
-						if (n < m && m > a && a < b)
-							std::cout << m << ' ' << b;
-						else
-							std::cout << "Нет числа, которое больше предыдущего!" << "\n\n";
+	if (m > n)
+		std::cout << m << std::endl;
+	if (a > m)
+		std::cout << a << std::endl;
+	if (b > a)
+		std::cout << b << std::endl;
+	if(n > m > a > b)
+	std::cout << "Нет числа, которое больше предыдущего!" << "\n\n";
 
 
 	//Задача 5
